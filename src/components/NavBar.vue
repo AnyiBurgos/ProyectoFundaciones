@@ -2,7 +2,7 @@
   <div class="header header-fixed">
         <div class="navbar container">
             <div class="logo"><a href="Home">
-                <img class="logopro" src="./../assets/Logo.jpg" alt="">
+                <img class="logopro" src="./../assets/Logo.jpg" alt="">Animal Lover Traces
             </a></div>
             <input id="navbar-toggle" >
             <label for="navbar-toggle"><i></i></label>
@@ -33,18 +33,19 @@ export default {
 <style scoped>
 
     .logopro {
+        border-radius: 150%;
         object-fit: contain;
-        width: 35px;
-        height: 35px;
+        width: 45px;
+        height: 45px;
     }
 
-.header-fixed {
-    position: fixed;
-    top: 0;
-    z-index: 1;
-    width: 100%;
-    background-color: rgba(21, 21, 21, 1);
-    box-shadow: 1px 1px 4px 1px rgba(0,0,0,0.1);
+    .header-fixed {
+        position: fixed;
+        top: 0;
+        z-index: 1;
+        width: 100%;
+        background-color: rgba(21, 21, 21, 1);
+        box-shadow: 1px 1px 4px 1px rgba(0,0,0,0.1);
     }
 
     .navbar {
@@ -54,11 +55,9 @@ export default {
         color: #fff;
         line-height: 60px;
     }
-
     .navbar .logo {
-        flex: 3; 
+        flex: 2; 
     }
-
     .navbar .logo a {
         display: block;
         font-size: 30px;
