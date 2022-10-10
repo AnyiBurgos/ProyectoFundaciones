@@ -37,6 +37,7 @@ export default {
         object-fit: contain;
         width: 45px;
         height: 45px;
+        font-size: 17px;
     }
 
     .header-fixed {
@@ -60,7 +61,7 @@ export default {
     }
     .navbar .logo a {
         display: block;
-        font-size: 30px;
+        font-size: 20px;
         font-weight: bold;
         color: #fff;
         text-decoration: none;
@@ -194,7 +195,7 @@ export default {
         .navbar nav li a {
         display: block;
         padding: 0 8px;
-        font-size: 16px;
+        font-size: 17px;
         line-height: 60px;
         color: #fff;
         text-decoration: none;

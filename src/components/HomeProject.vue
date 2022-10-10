@@ -1,16 +1,17 @@
 <template>
   <div>
-    <h1>Home</h1>
-    <h2>Animal Lover Tracer</h2>
-    <p>
-      Animal Lover Tacer tiene como objetivo dar a conocer las diferentes
-      fundaciones de Caldas que estén enfocadas a la protección animal. Aquí
-      podrás apoyar, conocer y etár más cerca de los diferentes procesos y
-      actividades de las fundaciones, ya sea en la rehabilitación de animales o
-      en actividades de concientización o recolección de recursos para los
-      peluditos.
-    </p>
-
+    <div class="description">
+      <h1>Animal Lover Tracer</h1><br>
+      <p class="paragraph">
+        Animal Lover Tacer tiene como objetivo dar a conocer las diferentes
+        fundaciones de Caldas que estén enfocadas a la protección animal. Aquí
+        podrás apoyar, conocer y etár más cerca de los diferentes procesos y
+        actividades de las fundaciones, ya sea en la rehabilitación de animales o
+        en actividades de concientización o recolección de recursos para los
+        peluditos.
+      </p>
+    </div>
+      
     <div class="contenedor">
       <div class="contenedor-cards">
         <div class="contenedor-card-item">
@@ -86,7 +87,13 @@
 
 <style>
 * {
-  font-family: arial;
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+
+.description .paragraph{
+  position: sticky;
+  width: 80%;
+  text-align: justify;
 }
 
 .contenedor {

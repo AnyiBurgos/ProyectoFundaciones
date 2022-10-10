@@ -24,13 +24,14 @@ export default {
 * {
   margin: 0;
   padding: 0;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 17px;
 }
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+
+#app {  
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  margin-top: 10%;
 }
 </style>

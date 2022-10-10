@@ -1,12 +1,12 @@
 <template>  
 
-    <div class="container">
+    <div class="container-form">
         <div id="ejemplo" class="modal">
             <div class="button-close">
-            <span class="cerrar">&times;</span>
+            <button class="cerrar">❎</button>
             </div> 
         </div> 
-        <div class="logo-login"><img src="../assets/Logo.jpg" />
+        <div ><img class="logo-login" src="../assets/Logo.jpg" />
         </div>
         <div>
             <form class="formulario">
@@ -42,28 +42,27 @@
 </script>
 
 <style>
-    .container{
+    .container-form{
+        background-color:aliceblue;
         width: 70%;
         align-items: center;
         margin: auto;
         font-size: 17px;
         border-color: #8B07EC;
-        font-family: 'Open Sans Condensed', sans-serif;
     }
 
     .button-close{
         float: right;
-        width: 15%;
+        width: 18%;
     }
 
     .logo-login{
-        align-items: center;
+        align-items: stretch;
         display: inline;
         margin:0%;
-        border-radius: 100px;
-        width: 50px;
-        height: 50px;
-        object-fit: contain;
+        border-radius: 100%;
+        width: 20%;
+        height: 20%;
     }
 
     .registro{
@@ -106,6 +105,7 @@
 
     /* código boton de ingreso */
     .login-button{
+        
         font-family: 'Open Sans Condensed', sans-serif;
         background-color: #09E8B2; 
         color: #353436;
@@ -117,8 +117,8 @@
         margin: 4px 2px;
         cursor: pointer;
         -webkit-border-radius: 5px;
-            -moz-border-radius: 5px;
-            border-radius: 100px;
+        -moz-border-radius: 5px;
+        border-radius: 100px;
         -webkit-transition-duration: 0.4s;
         transition-duration: 0.4s;
     }
@@ -129,7 +129,6 @@
 
 
     .checkbox-style{
-        all: none;
         font-family: 'Open Sans Condensed', sans-serif;
         float: none;
         width: 20%;
@@ -140,10 +139,6 @@
         padding: 5px;
         border-radius: 4px;
         width: 16px;
-        height: 15px;
     }
 
-    .checkbox-style.check1{
-        all: none;
-    }
 </style>
