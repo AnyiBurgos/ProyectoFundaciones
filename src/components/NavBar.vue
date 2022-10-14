@@ -4,6 +4,7 @@
             <div class="logo"><a href="Home">
                 <img class="logopro" src="./../assets/Logo.jpg" alt="">Animal Lover Traces
             </a></div>
+            <input type="checkbox" id="navbar-toggle" >
             <input id="navbar-toggle" >
             <label for="navbar-toggle"><i></i></label>
             <nav class="menu">
@@ -57,7 +58,7 @@ export default {
         line-height: 60px;
     }
     .navbar .logo {
-        flex: 2; 
+        flex: 3; 
     }
     .navbar .logo a {
         display: block;
