@@ -1,5 +1,5 @@
 <template>
-  <NavBar msg=''/>
+  <NavBar/>
   <LoginProject/>
   <FundacionesProject/>
   <router-view/>

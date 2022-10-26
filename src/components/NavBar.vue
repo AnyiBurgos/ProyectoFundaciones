@@ -10,28 +10,54 @@
             <nav class="menu">
                 <ul>
                     <li><a href="Home">Home</a></li>
-                    <li><a href="Login">Login</a></li>
+                    <li><a v-on:click="Login">Login</a></li>
                     <li><a href="Fundaciones">Fundaciones</a></li>
                 </ul>
             </nav>        
         </div>
     </div>
-  <div class="hello">
-    <h1>{{ msg }}</h1>
-  </div>
+    <div id="VentanaLogin">
+        <LoginProject/>
+    </div>
 </template>
 
 <script>
+import LoginProject from './LoginProject.vue';
 export default {
   name: 'NavBar',
-  props: {
-    msg: String
+  components: {
+    LoginProject
+  },
+  methods: {
+    Login: function(){
+        var VentanaLogin=document.getElementById('VentanaLogin')
+        if(VentanaLogin.style.display == 'none'){
+            VentanaLogin.style.display = 'block';
+            VentanaLogin.style.position='absolute';
+        }
+        else{
+            VentanaLogin.style.display = 'none';
+        }
+    }
   }
+
 }
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+
+#VentanaLogin{
+    display: none;
+    background: #8B07EC;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    align-items: center;
+    justify-content: center;
+}
 
     .logopro {
         border-radius: 150%;

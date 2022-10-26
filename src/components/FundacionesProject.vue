@@ -13,7 +13,7 @@
       <h2>Pensilvania, Caldas</h2>
       <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad eum dolorum architecto obcaecati enim dicta praesentium, quam nobis! Neque ad aliquam facilis numquam. Veritatis, sit.</p>
       <p class="see-more">
-        <a href="#">Ver más</a>
+        <button v-on:click="MoreFoundation">Ver más</button>
       </p>
     </div>
     </div>
@@ -45,13 +45,26 @@
       </p>
     </div>
   </div>
+  <div id="More">
+    <SeeMore/>
+  </div>
   
 </template>
 
 <script>
+import SeeMore from './SeeMore.vue';
     export default {
-		name: 'FundacionesProject',
-		}
+    name: 'FundacionesProject',
+    components: {
+      SeeMore
+    },
+    methods: {
+      MoreFoundation: function(){
+         document.getElementById('More')
+      }
+    }
+}
+
 </script>
 
 <style>

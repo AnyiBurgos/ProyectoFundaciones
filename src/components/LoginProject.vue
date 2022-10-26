@@ -25,8 +25,8 @@
                 <button class="login-button">Ingresar</button>
             </div>
             <div>
-                <div>
-                    <a class="registro" href="#">Registrarse</a>
+                <div class="registro">
+                    <a v-on:click="Register">Registrarse</a>
                 </div>
                 <div>
                     <a class="olvido-pass" href="#">Olvidé mi contraseña</a>
@@ -34,41 +34,48 @@
             </div>                 
         </div>   
     </div> 
+    <div id="RegisterBut">
+        <RegisterButton/>
+    </div>
 </template>
 
 <script>
+import RegisterButton from './RegisterButton.vue';
     export default {
 		name: 'LoginProject',
-		}
-
-/*function close() {
-    document.getElementById("close").style.display="block";
-}*/
-        
-    
-
+        components: {
+            RegisterButton
+        },
+        methods: {
+            Register: function(){
+                document.getElementById('RegisterBut')
+            }
+        }
+	}
 
 </script>
 
 <style>
 
-/*.overlay{
-    background: rgba(3,3,3,.6);
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-}*/
+.overlay{
+    z-index: 999;
+    position: absolute;
+}
     .container-form{
-        margin-top: 10%;
+        display: flex;
+        background-color: #fff;
+        margin-top: 15%;
         width: 70%;
         align-items: center;
         margin: auto;
         font-size: 17px;
         border-color: #8B07EC;
-        top: 30px;
-        position: relative;
+        border-radius: 3px;
+        position: absolute;
+        top: 20%;
+        bottom: 0;
+        left: 5%;
+        right: 0;
     }
 
     .button-close{
@@ -158,6 +165,7 @@
         padding: 5px;
         border-radius: 4px;
         width: 16px;
+        display: flex;
     }
 
 </style>

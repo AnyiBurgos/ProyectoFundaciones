@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="home">
     <div class="description">
       <h1>Animal Lover Tracer</h1><br>
       <p class="paragraph">
@@ -90,6 +90,10 @@
   font-family: 'Open Sans Condensed', sans-serif;
 }
 
+.home{
+  z-index: -1;
+}
+
 .description .paragraph{
   position: sticky;
   width: 80%;
@@ -135,7 +139,7 @@
 
 .contenedor-card-item-wrapper {
   overflow: hidden;
-  position: relative !important;
+  position: relative;
   background: #3e2723;
   border-radius: 5px;
 }
