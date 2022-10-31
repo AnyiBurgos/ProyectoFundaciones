@@ -59,21 +59,6 @@
             </div>
           </div>
         </div>
-        <div class="contenedor-card-item">
-          <div class="contenedor-card-item-wrapper">
-            <img
-              src="https://images.unsplash.com/photo-1440335680360-79703e7032f9"
-              alt=""
-            />
-            <div class="contenedor-info">
-              <div class="info">
-                <p class="titulo">Titulo</p>
-                <span class="categoria">Categoría</span>
-              </div>
-              <div class="fondo"></div>
-            </div>
-          </div>
-        </div>
       </div>
     </div>
   </div>
@@ -101,7 +86,7 @@
 }
 
 .contenedor {
-  position: relative;
+  position: static;
   width: 100%;
   margin: 0 auto;
   transition: all 0.3s ease-out;

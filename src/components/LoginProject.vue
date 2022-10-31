@@ -1,12 +1,8 @@
 <template>  
     <div class="overlay">
         <div class="container-form">
-            <div id="ejemplo" class="modal">
-                <div class="button-close">
-                <button id="close" class="cerrar">❎</button>
-                </div> 
-            </div> 
-            <div ><img class="logo-login" src="../assets/Logo.jpg" />
+            <div >
+                <img class="logo-login" src="../assets/Logo.jpg" />
             </div>
             <div>
                 <form class="formulario">
@@ -26,7 +22,7 @@
             </div>
             <div>
                 <div class="registro">
-                    <a v-on:click="Register">Registrarse</a>
+                    <a href="#">Registrarse</a>
                 </div>
                 <div>
                     <a class="olvido-pass" href="#">Olvidé mi contraseña</a>
@@ -34,22 +30,14 @@
             </div>                 
         </div>   
     </div> 
-    <div id="RegisterBut">
-        <RegisterButton/>
-    </div>
 </template>
 
 <script>
-import RegisterButton from './RegisterButton.vue';
+//import RegisterButton from './RegisterButton.vue';
     export default {
 		name: 'LoginProject',
         components: {
-            RegisterButton
-        },
-        methods: {
-            Register: function(){
-                document.getElementById('RegisterBut')
-            }
+            
         }
 	}
 
@@ -58,10 +46,13 @@ import RegisterButton from './RegisterButton.vue';
 <style>
 
 .overlay{
+    position:static;
     z-index: 999;
-    position: absolute;
 }
     .container-form{
+        flex-direction: column;
+        z-index: 999;
+        position: absolute;
         display: flex;
         background-color: #fff;
         margin-top: 15%;
@@ -69,28 +60,19 @@ import RegisterButton from './RegisterButton.vue';
         align-items: center;
         margin: auto;
         font-size: 17px;
-        border-color: #8B07EC;
         border-radius: 3px;
-        position: absolute;
         top: 20%;
         bottom: 0;
         left: 5%;
         right: 0;
     }
 
-    .button-close{
-        float: right;
-        width: 18%;
-    }
-
     .logo-login{
-        align-items: stretch;
-        display: inline;
-        margin:0%;
-        border-radius: 100%;
-        width: 20%;
-        height: 20%;
         align-items: center;
+        border-radius: 100%;
+        width: 30%;
+        display: flex;
+        justify-content: center;
     }
 
     .registro{

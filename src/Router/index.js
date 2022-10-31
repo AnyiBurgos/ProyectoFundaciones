@@ -1,9 +1,9 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeProject from '@/components/HomeProject.vue'
 import FundacionesProject from '@/components/FundacionesProject.vue'
+import RegisterButton from '@/components/RegisterButton.vue'
 
-
-const routes = [
+const routes = [    
     {
         path: '/', 
         name: 'Home',
@@ -18,6 +18,11 @@ const routes = [
         path: '/Fundaciones', 
         name: 'Fundaciones',
         component: FundacionesProject
+    },
+    {
+        path: '/Register', 
+        name: 'Register',
+        component: RegisterButton
     }
 ]
 

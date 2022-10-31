@@ -38,7 +38,8 @@
 <style>
     .container-form{
         position: absolute;
-        z-index: 999;
+        z-index: 99;
+        flex-direction: column;
     }
 
 </style>
