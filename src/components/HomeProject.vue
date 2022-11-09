@@ -1,62 +1,33 @@
 <template>
   <div class="home">
     <div class="description">
-      <h1>Animal Lover Tracer</h1><br>
-      <p class="paragraph">
-        Animal Lover Tacer tiene como objetivo dar a conocer las diferentes
+      <h1 class="title">Animal Lover Traces</h1><br>
+      <p>
+        Se tiene como objetivo dar a conocer las diferentes
         fundaciones de Caldas que estén enfocadas a la protección animal. Aquí
-        podrás apoyar, conocer y etár más cerca de los diferentes procesos y
+        podrás apoyar, conocer y estar más cerca de las diferentes procesos y
         actividades de las fundaciones, ya sea en la rehabilitación de animales o
         en actividades de concientización o recolección de recursos para los
         peluditos.
       </p>
-    </div>
-      
+    </div>      
     <div class="contenedor">
       <div class="contenedor-cards">
         <div class="contenedor-card-item">
           <div class="contenedor-card-item-wrapper">
-            <img
-              src="https://images.unsplash.com/photo-1448932223592-d1fc686e76ea"
-              alt=""
-            />
-            <div class="contenedor-info">
-              <div class="info">
-                <p class="titulo">Titulo</p>
-                <span class="categoria">Categoría</span>
-              </div>
-              <div class="fondo"></div>
-            </div>
+            <img src="@/assets/Home.jpg"/>
           </div>
         </div>
         <div class="contenedor-card-item">
           <div class="contenedor-card-item-wrapper">
             <img
-              src="https://images.unsplash.com/photo-1473186505569-9c61870c11f9"
-              alt=""
-            />
-            <div class="contenedor-info">
-              <div class="info">
-                <p class="titulo">Titulo</p>
-                <span class="categoria">Categoría</span>
-              </div>
-              <div class="fondo"></div>
-            </div>
+              src="@/assets/Home1.jpg"/>
           </div>
         </div>
         <div class="contenedor-card-item">
           <div class="contenedor-card-item-wrapper">
             <img
-              src="https://images.unsplash.com/photo-1456324504439-367cee3b3c32"
-              alt=""
-            />
-            <div class="contenedor-info">
-              <div class="info">
-                <p class="titulo">Titulo</p>
-                <span class="categoria">Categoría</span>
-              </div>
-              <div class="fondo"></div>
-            </div>
+              src="@/assets/Home2.jpg"/>
           </div>
         </div>
       </div>
@@ -71,18 +42,33 @@
 </script>
 
 <style>
-* {
-  font-family: 'Open Sans Condensed', sans-serif;
-}
 
 .home{
   z-index: -1;
+  background-color: antiquewhite;
+  margin-top: 73px;
+}
+.title{
+  text-align: center;
+  height: 100%;
+  background-size: 100% 100%;  
+  font-family: 'Open Sans Condensed', cursive;
+  font-size: 80px;
+  color: #8B07EC;
+  text-align: center;
+  line-height: 100px;
+  text-shadow: 0 5px 0 #09e8b067,
+               0 10px 10px rgba(0, 0, 0, .6);
 }
 
-.description .paragraph{
+.description{
   position: sticky;
-  width: 80%;
+  width: 70%;
   text-align: justify;
+  align-items: center;
+  align-content: center;
+  margin-left: 16%;
+  line-height: 30px;
 }
 
 .contenedor {
@@ -98,7 +84,7 @@
 .contenedor-cards {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .contenedor-cards .contenedor-card-item {
@@ -112,14 +98,6 @@
   transition: all 0.3s ease-out;
   border-radius: 5px;
   cursor: help;
-}
-
-.contenedor-cards .contenedor-card-item:hover {
-  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
-  -webkit-transform: translateY(-10px);
-  -ms-transform: translateY(-10px);
-  -o-transform: translateY(-10px);
-  transform: translateY(-10px);
 }
 
 .contenedor-card-item-wrapper {
@@ -147,49 +125,6 @@
   transition: all 0.5s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
 
-.contenedor-card-item .contenedor-info .fondo {
-  background: -moz-linear-gradient(
-    top,
-    rgba(0, 0, 0, 0) 0%,
-    rgba(0, 0, 0, 0.73) 53%,
-    rgba(0, 0, 0, 0.88) 100%
-  );
-  background: -webkit-linear-gradient(
-    top,
-    rgba(0, 0, 0, 0) 0%,
-    rgba(0, 0, 0, 0.73) 53%,
-    rgba(0, 0, 0, 0.88) 100%
-  );
-  background: linear-gradient(
-    to bottom,
-    rgba(0, 0, 0, 0) 0%,
-    rgba(0, 0, 0, 0.73) 53%,
-    rgba(0, 0, 0, 0.88) 100%
-  );
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#e0000000',GradientType=0 );
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-
-.contenedor-card-item .contenedor-info .info {
-  color: #fff;
-  position: relative;
-  z-index: 500;
-  padding: 20px 15px;
-}
-
-.contenedor-card-item .contenedor-info .info .titulo {
-  margin: 0;
-  font-size: 20px;
-}
-
-.contenedor-card-item .contenedor-info .info .categoria {
-  display: block;
-  font-size: 10px;
-}
 
 .contenedor-card-item:hover .contenedor-info {
   bottom: 0;

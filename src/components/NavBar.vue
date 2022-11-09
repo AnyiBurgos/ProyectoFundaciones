@@ -1,69 +1,38 @@
 <template>
   <div class="header header-fixed">
         <div class="navbar container">
-            <div class="logo"><a href="Home">
-                <img class="logopro" src="./../assets/Logo.jpg" alt="">Animal Lover Traces
-            </a></div>
+            <div class="logo-project">
+                <a href="Home">
+                    <img class="logopro" src="./../assets/Logo.jpg" alt="">Animal Lover Traces
+                </a>
+            </div>
             <input type="checkbox" id="navbar-toggle" >
             <input id="navbar-toggle" >
             <label for="navbar-toggle"><i></i></label>
             <nav class="menu">
                 <ul>
                     <li><a href="Home">Home</a></li>
-                    <li><a v-on:click="Login">Login</a></li>
                     <li><a href="Fundaciones">Fundaciones</a></li>
+                    <li><a href="Login">Login</a></li>
                 </ul>
             </nav>        
         </div>
     </div>
-    <div id="VentanaLogin">
-        <LoginProject/>
-    </div>
 </template>
 
 <script>
-import LoginProject from './LoginProject.vue';
 export default {
   name: 'NavBar',
-  components: {
-    LoginProject
-  },
-  methods: {
-    Login: function(){
-        var VentanaLogin=document.getElementById('VentanaLogin')
-        if(VentanaLogin.style.display == 'none'){
-            VentanaLogin.style.display = 'block';
-            VentanaLogin.style.position='absolute';
-        }
-        else{
-            VentanaLogin.style.display = 'none';
-        }
-    }
   }
-
-}
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 
-#VentanaLogin{
-    display: none;
-    background: #8B07EC;
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    align-items: center;
-    justify-content: center;
-}
-
     .logopro {
-        border-radius: 150%;
+        border-radius: 100%;
         object-fit: contain;
         width: 45px;
-        height: 45px;
         font-size: 17px;
     }
 
@@ -72,29 +41,27 @@ export default {
         top: 0;
         z-index: 1;
         width: 100%;
-        background-color: rgba(21, 21, 21, 1);
-        box-shadow: 1px 1px 4px 1px rgba(0,0,0,0.1);
+        background-color: #09E8B2;
+        box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.556);
     }
 
     .navbar {
+        position: relative;
         display: flex;
         justify-content: space-between;
         align-items: center;
-        color: #fff;
+        color: #09E8B2;
         line-height: 60px;
     }
-    .navbar .logo {
-        flex: 3; 
-    }
-    .navbar .logo a {
+    .navbar .logo-project a {
         display: block;
         font-size: 20px;
         font-weight: bold;
-        color: #fff;
+        color: #8B07EC;
         text-decoration: none;
     }
-    .navbar .logo a:hover {
-    color: #777777;
+    .navbar .logo-project a:hover {
+    color: #77777796;
     }
 
     .navbar nav {
@@ -129,7 +96,7 @@ export default {
     .navbar label i:before,
     .navbar label i:after {
     display: block;
-    background: #eee;  
+    background: #8B07EC;  
     }
     .navbar label i:before {
     top: 5px;
@@ -147,7 +114,7 @@ export default {
     opacity: 0.99;
     }
     .header #navbar-toggle:checked ~ label {
-    background: #212121;
+    background: #1A1E25;
     border-radius: 50%;    
     }
     .header #navbar-toggle:checked ~ label i {
@@ -173,10 +140,10 @@ export default {
         top: 0px;
         left: 0px;
         width: 100%;
-        height: 100%;
+        height: 30%;
         transition: all 0.3s ease-out;
         display: table;
-        background: #ddd;
+        background: #09E8B2;
         }
         .navbar nav ul {
         margin: 0;
@@ -196,14 +163,14 @@ export default {
         transition: all 0.3s ease-out;
         }
         .navbar nav li:hover {
-        background: #212121;
+        background: #1A1E25;
         }
         .navbar nav li:hover a {
         color: #fff;
         transition: all 0.3s ease-out;
         }
         .navbar nav li a {
-        color: #212121;
+        color: #8B07EC;
         }
     }
 
@@ -224,14 +191,14 @@ export default {
         padding: 0 8px;
         font-size: 17px;
         line-height: 60px;
-        color: #fff;
+        color: #8B07EC ;
         text-decoration: none;
         }
         .navbar nav li.active {
         background: #555;  
         }
         .navbar nav li:hover {
-        background: #333;
+        background: rgba(51, 51, 51, 0.155);
         }
         .navbar label {
         display: none;

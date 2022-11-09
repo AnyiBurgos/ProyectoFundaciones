@@ -3,6 +3,8 @@ node_modules
 /dist
 .jpg
 .gif
+.jpeg
+.png
 
 
 # local env files
